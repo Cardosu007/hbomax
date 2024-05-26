@@ -114,9 +114,7 @@ body {
 }
 
 .btn-assine {
-  padding: 16px 40px;
   background-color: var(--tertiary-color);
-  border-radius: 500px;
   font-weight: 700;
   color: var(--text-color);
   text-transform: uppercase;
@@ -128,6 +126,7 @@ body {
 }
 
 .btn-gradiente {
+  padding: 16px 40px;
   background: var(--btn-bg-color-gradient);
   outline: 3px solid transparent;
   transition: background 1s, outline 1s, transform 1s;

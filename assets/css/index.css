@@ -38,6 +38,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 24px;
+    margin-top: 30px;
 }
 
 .header-h1 {
@@ -80,6 +81,72 @@ main {
   text-align: center;
   width: 40vh;
 }
+
+.planos {
+  background: url(/assets/images/background-movies-series.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+  text-align: center;
+}
+
+.text-planos {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.planos-assinaturas {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0px;
+  perspective: 2000px;
+  perspective-origin: top;
+}
+
+.planos-card {
+  background: var(--card-bg-color);
+    padding: 40px 60px;
+    border-radius: 8px;
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 1s ease-in-out;
+}
+
+.titulo-card {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.preco-card {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.preco-card-tempo {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
