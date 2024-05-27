@@ -142,3 +142,18 @@ body {
   transform: scale(1.05);
   color: #fff;
 }
+
+.btn-gradiente-plano {
+  padding: 16px 40px;
+  background: var(--btn-bg-color-gradient);
+  outline: 3px solid transparent;
+  background-size: 250%; 
+}
+
+.btn-gradiente-plano:hover {
+  background-color: transparent;
+  background-position: 100%;
+  outline: 2px solid var(--secondary-color);
+  transform: scale(1.05);
+  color: #fff;
+}

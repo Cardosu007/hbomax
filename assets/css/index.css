@@ -91,7 +91,6 @@ main {
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 24px;
   text-align: center;
 }
 
@@ -103,7 +102,7 @@ main {
 .planos-assinaturas {
   display: flex;
   justify-content: space-around;
-  margin: 40px 0px;
+  margin: 40px 0px 0px 30px;
   perspective: 2000px;
   perspective-origin: top;
   text-align: left;
@@ -120,6 +119,16 @@ main {
     transition: transform 1s ease-in-out;
 }
 
+.planos-assinaturas:has(.planos-card:nth-child(1):hover)
+  .planos-card:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+
+.planos-assinaturas:has(.planos-card:nth-child(2):hover)
+  .planos-card:nth-child(1) {
+  transform: rotateY(45deg);
+}
+
 .titulo-card {
   display: flex;
   justify-content: space-around;
@@ -130,6 +139,7 @@ main {
 .preco-card {
   color: var(--secondary-color);
   font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .preco-card-tempo {
@@ -139,18 +149,18 @@ main {
 }
 
 .beneficios {
-  font-size: 1.25;
+  font-size: 1.25rem;
   unicode-bidi: isolate;
 }
 
 .beneficios-descricao {
   display: list-item;
   unicode-bidi: isolate;
+  padding-bottom: 20px;
 }
 
 ul.lista-costumizada {
   list-style: none;
-  padding-left: 0;
 }
 
 ul.lista-costumizada li::before {
